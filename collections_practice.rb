@@ -50,6 +50,7 @@ def kesha_maker(strings)
   
   strings.each do |string|
     
+<<<<<<< HEAD
     out_arr.push(string.gsub(/(?<=\b..)./, '$'))
     
   end
@@ -88,6 +89,9 @@ def add_s(strings)
     string << "s" if count != 1
     out_arr.push(string)
     count+=1
+=======
+    out_arr.push(string.gsub(/[\S](?=[\S]{2}\b)/, '$'))
+>>>>>>> d47726cfe7606a86be066bc4aa335fc2d7758388
     
   end
   
